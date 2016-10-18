@@ -2,7 +2,7 @@
 
 # At first some Definitions:
 
-ONLINE_SSID=`wireless.client_radio0.ssid`
+ONLINE_SSID=`uci get wireless.client_radio0.ssid`
 OFFLINE_PREFIX="(Offline)  `uci get wireless.client_radio0.ssid`"
 UPPER_LIMIT='55' #Above this limit the online SSID will be used
 LOWER_LIMIT='45' #Below this limit the offline SSID will be used

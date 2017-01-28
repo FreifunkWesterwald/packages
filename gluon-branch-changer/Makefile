@@ -8,10 +8,17 @@ PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/gluon-branch-changer
-  SECTION:=gluon
-  CATEGORY:=Gluon
-  TITLE:=Branch Changer
+  SECTION:=westerwald
+  CATEGORY:=Customization
+  TITLE:=Branch changer
   DEPENDS:=+gluon-core
+  MAINTAINER:=Freifunk Westerwald
+  URL:=https://github.com/FreifunkWesterwald/packages
+  SOURCE:=https://github.com/FreifunkWesterwald/packages.git
+endef
+
+define Package/gluon-branch-changer/description
+	Branch changer
 endef
 
 define Build/Prepare

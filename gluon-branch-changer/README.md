@@ -1,4 +1,4 @@
-ssid-changer
+branch-changer
 ============
 
 Script to change the autoupdater branch when the user change manually the firmware. E.g. from stable to beta
